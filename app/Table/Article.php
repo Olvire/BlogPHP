@@ -9,7 +9,7 @@ class Article
 {
 
 	public static function getLast(){
-		return App::getDb()->query('SELECT * FROM article', __CLASS__);
+		return App::getDb()->query("SELECT article.id,article.titre,article.contenu,categorie.titre as categorie FROM article LEFT JOIN categorie ON categorie_id=categorie.id", __CLASS__);
 	}
 
 
