@@ -1,15 +1,7 @@
-<h1>Je suis la home</h1>
-<?php 
-	$host = "localhost";
-	$user = "root";
-	$pass = "root";
-	$base = "blog";
 
+	<?php  foreach (\App\Table\Article::getLast() as $post): ?>
 
-        $pdo = new PDO('mysql:host='.$host.';dbname='.$base,$user,$pass);
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  
-	$resultat = $pdo->query('SELECT * FROM article');
-	$data = $resultat->fetchAll(PDO::FETCH_OBJ);
-	var_dump($data[0]->titre);
- ?>
+	<h2><a href="<?php echo $post->url ?>"><?php echo $post->titre; ?></a></h2>
+	<p><?php echo $post->extrait; ?></p>
+
+	<?php endforeach; ?>

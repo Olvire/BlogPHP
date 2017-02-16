@@ -6,20 +6,22 @@ App\Autoloader::register();
 
 
 
-if (isset($_GET['id'])) {
-	$id = $_GET['id'];
+if (isset($_GET['p'])) {
+	$p = $_GET['p'];
 } else {
-	$id = 'home';
+	$p = 'home';
 }
+
+
 	ob_start();
-	switch ($id) {
+	switch ($p) {
 
 		case 'home':
 		require '../pages/home.php';
 		break;
 
-		case '1':
-		require '../pages/home.php';
+		case 'post':
+		require '../pages/post.php';
 		break;
 
 
