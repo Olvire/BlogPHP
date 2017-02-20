@@ -5,19 +5,11 @@ use App\App;
 /**
 * 
 */
-class Article
+class Article extends Table
 {
 
 	public static function getLast(){
 		return App::getDb()->query("SELECT article.id,article.titre,article.contenu,categorie.titre as categorie FROM article LEFT JOIN categorie ON categorie_id=categorie.id", __CLASS__);
-	}
-
-
-	public function __get($key){
-
-		$method = 'get' . ucfirst($key);
-		$this->$key = $this->$method();
-		return $this->$key;
 	}
 	
 	public function getUrl(){

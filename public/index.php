@@ -1,32 +1,21 @@
-<?php 
+<?php
+define('ROOT', dirname(__DIR__));
+require ROOT . '/app/App.php';
+App::load();
 
-require '../app/Autoloader.php';
-
-App\Autoloader::register();
-
-
-
-if (isset($_GET['p'])) {
-	$p = $_GET['p'];
-} else {
-	$p = 'home';
+if(isset($_GET['p'])){
+    $page = $_GET['p'];
+}else{
+    $page = 'posts.index';
 }
 
-
-	ob_start();
-	switch ($p) {
-
-		case 'home':
-		require '../pages/home.php';
-		break;
-
-		case 'post':
-		require '../pages/post.php';
-		break;
-
-
-
+$page = explode('.', $page);
+if($page[0] == 'admin'){
+    $controller = '\App\Controller\Admin\\' . ucfirst($page[1]) . 'Controller';
+    $action = $page[2];
+} else{
+    $controller = '\App\Controller\\' . ucfirst($page[0]) . 'Controller';
+    $action = $page[1];
 }
-$content = ob_get_clean();
-
-require '../pages/templates/default.php';
+$controller = new $controller();
+$controller->$action();
