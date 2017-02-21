@@ -3,10 +3,10 @@ namespace App\Entity;
 
 use Core\Entity\Entity;
 
-class PostEntity extends Entity{
+class ChapitreEntity extends Entity{
 
     public function getUrl(){
-        return 'index.php?p=posts.show&id=' . $this->id;
+        return 'index.php?p=chapitres.show&id=' . $this->id;
     }
 
     public function getExtrait(){

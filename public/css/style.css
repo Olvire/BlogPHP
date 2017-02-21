@@ -1,3 +1,51 @@
-body {
-  padding-top: 50px;
+
+.livre-couverture {
+	margin: auto;
+	width: 80%;
+	height: 80vh;
+	background: url(../img/couverture.jpg);
+	background-size: cover;
+	text-align: center;
+	opacity: 0.8;
+}
+.livre-couverture:hover{
+	opacity: 1;
+}
+h3{
+	font-size: 4em;
+	padding-top: 3em;
+	color: gold;
+}
+.index a:hover{
+	font-style: none;
+	text-decoration: none;
+}
+.bar-bottom{
+	margin-top: 1em;
+	background: #2c323a;
+	height: 66px;
+}
+.custom-select{
+	width: 100%;
+	line-height: 66px;
+}
+.bar-bottom select{
+	  background: #fafafa;
+   width: 100%;
+   padding: 5px;
+   font-size: 16px;
+   line-height: 1;
+   border: 0;
+   border-radius: 0;
+   height: 34px;
+   -webkit-appearance: none;
+}
+.livre form{
+	width: 250px;
+}
+.tab-right{
+	line-height: 66px;
+}
+.tab-right a{
+	padding: 1em;
 }

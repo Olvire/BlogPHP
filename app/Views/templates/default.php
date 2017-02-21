@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="../public/css/style.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.php">Project name</a>
+            <a class="navbar-brand" href="index.php">Blog écrivain</a>
         </div>
     </div>
 </nav>
