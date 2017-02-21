@@ -32,6 +32,7 @@ class ChapitresController extends AppController{
     }
 
     public function commentaires(){
+        $commentaire = $this->Commentaire->
         $this->render('chapitres.commentaire', compact('chapitres','commentaires','commentaire'));
     }
 
