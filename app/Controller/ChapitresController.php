@@ -31,9 +31,15 @@ class ChapitresController extends AppController{
         $this->render('chapitres.livre', compact('chapitres', 'livres', 'livre','form'));
     }
 
-    public function commentaires(){
-        $commentaire = $this->Commentaire->
-        $this->render('chapitres.commentaire', compact('chapitres','commentaires','commentaire'));
+    public function commentaire(){
+        $chapitre = $this->Chapitre->find($_GET['id']);
+        if($chapitre === false){
+            $this->notFound();
+        }
+        $commentaires = $this->Commentaire->showComment($_GET['id']);
+        $chapitres = $this->Chapitre->all();
+        $form = new BootstrapForm($chapitres);
+        $this->render('chapitres.commentaire', compact('commentaires', 'chapitres', 'chapitre','form'));
     }
 
     public function show(){

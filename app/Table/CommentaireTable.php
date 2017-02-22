@@ -8,17 +8,17 @@ class CommentaireTable extends Table{
     protected $table = "commentaires";
 
      /**
-     * Récupère les derniers articles de la category demandée
-     * @param $category_id int
+     * Récupère les derniers commentaires de la category demandée
+     * @param $chapitre_id int
      * @return array
      */
-    public function lastByLivre($livre_id){
+    public function showComment($chapitre_id){
         return $this->query("
-            SELECT chapitres.id, chapitres.titre, chapitres.contenu, chapitres.date, livres.titre as livre
-            FROM chapitres
-            LEFT JOIN livres ON livre_id = livres.id
-            WHERE chapitres.livre_id = ?
-            ORDER BY chapitres.date DESC", [$livre_id]);
+            SELECT commentaires.id, commentaires.contenu, commentaires.date, chapitres.titre as chapitre
+            FROM commentaires
+            LEFT JOIN chapitres ON chapitre_id = chapitres.id
+            WHERE commentaires.chapitre_id = ?
+            ORDER BY commentaires.date DESC", [$chapitre_id]);
     }
 
 
