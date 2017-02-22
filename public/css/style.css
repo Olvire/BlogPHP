@@ -49,3 +49,33 @@ h3{
 .tab-right a{
 	padding: 1em;
 }
+.com1{
+	padding: 3em;
+	background: red;
+	color:white;
+}
+.com2{
+	margin-left: 2em;
+	padding: 1em;
+	color:green;
+}
+.com3{
+	color: blue;
+	margin-left: 4em;
+	padding: 1em;
+}
+.commentaires{
+	padding: 3em;
+	background: #fafafa;
+}
+#commentaires{
+	display: none;
+}
+.com1 a{
+	margin-left: 1em;
+}
+.commentaireReponse{
+	padding: 2em;
+	background: #b1bdd1;
+	display: none;
+}

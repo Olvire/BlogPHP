@@ -40,7 +40,7 @@ class ChapitreTable extends Table{
      */
     public function findWithLivre($id){
         return $this->query("
-            SELECT chapitres.id, chapitres.titre, chapitres.contenu, chapitres.date, livres.titre as livre
+            SELECT chapitres.id, chapitres.titre, chapitres.contenu, chapitres.date, chapitres.livre_id, livres.titre as livre
             FROM chapitres
             LEFT JOIN livres ON livre_id = livres.id
             WHERE chapitres.id = ?", [$id], true);

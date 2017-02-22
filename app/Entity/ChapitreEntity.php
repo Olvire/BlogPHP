@@ -10,7 +10,7 @@ class ChapitreEntity extends Entity{
     }
 
     public function getExtrait(){
-        $html = '<p>' . substr($this->contenu, 0, 100) . '...</p>';
+        $html = '<p>' . substr($this->contenu, 0, 300) . '...</p>';
         $html .= '<p><a href="' . $this->getURL() . '">Voir la suite</a></p>';
         return $html;
     }

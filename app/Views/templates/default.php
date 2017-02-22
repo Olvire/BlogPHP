@@ -13,6 +13,9 @@
     <!-- Bootstrap core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../public/css/style.css">
+<script type="text/javascript" src="../public/js/jquery.js"></script>
+ 
+
 </head>
 
 <body>
