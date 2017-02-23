@@ -13,6 +13,7 @@ class ChapitresController extends AppController{
         $this->loadModel('Livre');
         $this->loadModel('Commentaire');
         $this->loadModel('Commentaire2');
+        $this->loadModel('Commentaire3');
     }
 
     public function index(){
@@ -66,4 +67,51 @@ class ChapitresController extends AppController{
         }
     }
 
+    public function signaler2(){
+        if (!empty($_POST)) {
+            $result = $this->Commentaire2->update($_POST['id'], [
+                'signale' => true,
+            ]);
+            $this->show($_POST['id_chapitre']);
+        }
+    }
+
+     public function signaler3(){
+        if (!empty($_POST)) {
+            $result = $this->Commentaire3->update($_POST['id'], [
+                'signale' => true,
+            ]);
+            $this->show($_POST['id_chapitre']);
+        }
+    }
+
+    public function addCom(){
+        if (!empty($_POST)) {
+            $result = $this->Commentaire->create([
+                'contenu' => $_POST['contenu'],
+                'chapitre_id' => $_POST['id_chapitre']
+            ]);
+            $this->show($_POST['id_chapitre']);
+        }
+    }
+
+    public function addCom2(){
+        if (!empty($_POST)) {
+            $result = $this->Commentaire2->create([
+                'contenu' => $_POST['contenu'],
+                'commentaire_id' => $_POST['commentaire_id']
+            ]);
+            $this->show($_POST['id_chapitre']);
+        }
+    }
+
+    public function addCom3(){
+        if (!empty($_POST)) {
+            $result = $this->Commentaire3->create([
+                'contenu' => $_POST['contenu'],
+                'commentaire2_id' => $_POST['commentaire2_id']
+            ]);
+            $this->show($_POST['id_chapitre']);
+        }
+    }
 }

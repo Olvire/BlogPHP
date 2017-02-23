@@ -56,13 +56,13 @@ h3{
 }
 .com2{
 	margin-left: 2em;
-	padding: 1em;
+	padding: 3em;
 	color:green;
 }
 .com3{
 	color: blue;
 	margin-left: 4em;
-	padding: 1em;
+	padding: 3em;
 }
 .commentaires{
 	padding: 3em;
@@ -71,10 +71,12 @@ h3{
 #commentaires{
 	display: none;
 }
-.com1 a{
-	margin-left: 1em;
+.com1 a,.com2 a,.com3 a{
+	margin-right: 1em;
 }
 .commentaireReponse{
+	margin-top: 3em;
+	clear: both;
 	padding: 2em;
 	background: #b1bdd1;
 	display: none;
