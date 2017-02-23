@@ -5,4 +5,4 @@ return array(
     "db_host" => "localhost",
     "db_name" => "projetBlog"
 );
-Alors ? test test
+Alors ? et maintenant?
