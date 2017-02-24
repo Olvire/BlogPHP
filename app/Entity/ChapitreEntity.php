@@ -5,6 +5,10 @@ use Core\Entity\Entity;
 
 class ChapitreEntity extends Entity{
 
+	public function getUrlAdmin(){
+		return 'index.php?p=admin.chapitres.show&id=' . $this->id;
+	}
+
     public function getUrl(){
         return 'index.php?p=chapitres.show&id=' . $this->id;
     }

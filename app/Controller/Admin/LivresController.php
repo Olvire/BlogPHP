@@ -4,7 +4,7 @@ namespace App\Controller\Admin;
 
 use Core\HTML\BootstrapForm;
 
-class CategoriesController extends AppController{
+class LivresController extends AppController{
 
     public function __construct(){
         parent::__construct();

@@ -55,7 +55,26 @@ class ChapitresController extends AppController{
          $commentaires = $this->Commentaire->showComment($id);
          $commentaires2 = $this->Commentaire->showComment2();
          $commentaires3 = $this->Commentaire->showComment3();
-        $this->render('chapitres.show', compact('chapitres','chapitre','commentaires','commentaires2','commentaires3'));
+         $pagesAfter=[];
+         $pagesBefore=[];
+         foreach ($chapitres as $Chapitre) {
+            if ($Chapitre->id > $chapitre->id) {
+                $pagesAfter[]=$Chapitre->id;
+            } elseif ($Chapitre->id < $chapitre->id) {
+                $pagesBefore[]=$Chapitre->id;
+            }
+        }
+        if (isset($pagesBefore[0])) {
+            $pageBefore = "index.php?p=chapitres.show&id=".$pagesBefore[0];
+        } else {
+            $pageBefore = "index.php?p=chapitres.show&id=".$chapitre->id;
+        }
+        if (isset($pagesAfter[0])) {
+            $pageAfter = "index.php?p=chapitres.show&id=".$pagesAfter[count($pagesAfter)-1];
+        } else {
+            $pageAfter = "index.php?p=chapitres.show&id=".$chapitre->id;
+        }
+        $this->render('chapitres.show', compact('chapitres','chapitre','commentaires','commentaires2','commentaires3','pageBefore','pageAfter'));
     }
 
      public function signaler(){
@@ -87,8 +106,9 @@ class ChapitresController extends AppController{
 
     public function addCom(){
         if (!empty($_POST)) {
+            $contenu = htmlspecialchars($_POST['contenu']);
             $result = $this->Commentaire->create([
-                'contenu' => $_POST['contenu'],
+                'contenu' => $contenu,
                 'chapitre_id' => $_POST['id_chapitre']
             ]);
             $this->show($_POST['id_chapitre']);
@@ -97,8 +117,9 @@ class ChapitresController extends AppController{
 
     public function addCom2(){
         if (!empty($_POST)) {
+            $contenu = htmlspecialchars($_POST['contenu']);
             $result = $this->Commentaire2->create([
-                'contenu' => $_POST['contenu'],
+                'contenu' => $contenu,
                 'commentaire_id' => $_POST['commentaire_id']
             ]);
             $this->show($_POST['id_chapitre']);
@@ -107,8 +128,9 @@ class ChapitresController extends AppController{
 
     public function addCom3(){
         if (!empty($_POST)) {
+            $contenu = htmlspecialchars($_POST['contenu']);
             $result = $this->Commentaire3->create([
-                'contenu' => $_POST['contenu'],
+                'contenu' => $contenu,
                 'commentaire2_id' => $_POST['commentaire2_id']
             ]);
             $this->show($_POST['id_chapitre']);

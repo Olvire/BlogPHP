@@ -1,28 +1,6 @@
-<?php 
-			$pagesAfter=[];
-			$pagesBefore=[];
-		foreach ($chapitres as $Chapitre) {
-			if ($Chapitre->id > $chapitre->id) {
-				$pagesAfter[]=$Chapitre->id;
-			} elseif ($Chapitre->id < $chapitre->id) {
-				$pagesBefore[]=$Chapitre->id;
-			}
-		}
-		if (isset($pagesAfter[0])) {
-			$pageAfter = "index.php?p=chapitres.show&id=".$pagesAfter[0];
-		} else {
-			$pageAfter = "";
-		}
-		
-		if (isset($pagesBefore[0])) {
-			$pageBefore = "index.php?p=chapitres.show&id=".$pagesBefore[count($pagesBefore)-1];
-		} else {
-			$pageBefore = "";
-		}
-		
-		?>
+
 <div class="row">
-	<div class="col-xs-12">
+	<div class="col-xs-12 chapitre">
 		<h1><?= $chapitre->titre; ?></h1>
 		
 		<p><em><?= $chapitre->livre; ?></em></p>
@@ -31,7 +9,7 @@
 		
 	</div>
 	
-	        <div class="col-sm-12 bar-bottom">
+	        <div class="col-xs-12 bar-bottom">
 	        	<div class="tab-right pull-right">
 	        	<a href="#" id="commentaires-bouton">
 	        	       <i class="icon icon-arrow-circle-left"></i>
@@ -221,7 +199,7 @@ echo "<div id='third.$commentaire3->id' class='com com3'>
         $(".repondre").on('click',function(e){
         	e.preventDefault();
         	var commentaireReponse = $(this).next('.commentaireReponse');
-        	commentaireReponse.slideUp();
+        	$('.commentaireReponse').slideUp();
         	if (commentaireReponse.is(":hidden")) {
                     commentaireReponse.slideDown();
                 };

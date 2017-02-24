@@ -1,4 +1,22 @@
 
+body{
+	background: white;
+}
+.chapitre-index{
+	padding: 2em;
+	background: #fafafa;
+	border: 1px solid #9d9d9d;
+}
+h2 a{
+	color: black;
+}
+a{
+	color: black;
+}
+.chapitre{
+	background: #fafafa;
+	padding: 2em;
+}
 .livre-couverture {
 	margin: auto;
 	width: 80%;
@@ -6,7 +24,7 @@
 	background: url(../img/couverture.jpg);
 	background-size: cover;
 	text-align: center;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 .livre-couverture:hover{
 	opacity: 1;
@@ -22,8 +40,15 @@ h3{
 }
 .bar-bottom{
 	margin-top: 1em;
-	background: #2c323a;
+	background: black;
 	height: 66px;
+	color: white;
+}
+.bar-bottom a{ 
+	color: #9d9d9d;
+}
+.bar-bottom a:hover{ 
+	color: white;
 }
 .custom-select{
 	width: 100%;
@@ -49,35 +74,37 @@ h3{
 .tab-right a{
 	padding: 1em;
 }
-.com1{
+.com{
 	padding: 3em;
-	background: red;
-	color:white;
+	background: white;
+	border:1px solid #9d9d9d;
+	margin-bottom: 2em;
 }
 .com2{
-	margin-left: 2em;
-	padding: 3em;
-	color:green;
+	margin-left: 3em;
 }
 .com3{
-	color: blue;
-	margin-left: 4em;
-	padding: 3em;
+	margin-left: 6em;
 }
+
 .commentaires{
 	padding: 3em;
 	background: #fafafa;
 }
-#commentaires{
+#commentaires,#commentaires-signales{
 	display: none;
 }
 .com1 a,.com2 a,.com3 a{
 	margin-right: 1em;
 }
 .commentaireReponse{
-	margin-top: 3em;
+	border:1px solid #9d9d9d;
+	margin-top: 6em;
 	clear: both;
 	padding: 2em;
-	background: #b1bdd1;
+	background: #fafafa;
 	display: none;
+}
+textarea{
+	width: 80%;
 }

@@ -14,7 +14,7 @@ class CommentaireTable extends Table{
      */
     public function showComment($chapitre_id){
         return $this->query("
-            SELECT commentaires.id, commentaires.contenu, commentaires.date, chapitres.titre as chapitre
+            SELECT commentaires.id, commentaires.contenu, commentaires.date,commentaires.signale, chapitres.titre as chapitre
             FROM commentaires
             LEFT JOIN chapitres ON chapitre_id = chapitres.id
             WHERE commentaires.chapitre_id = ?
@@ -28,7 +28,7 @@ class CommentaireTable extends Table{
      */
     public function showComment2(){
         return $this->query("
-            SELECT commentaires2.id, commentaires2.contenu, commentaires2.date,commentaires2.commentaire_id
+            SELECT commentaires2.id, commentaires2.contenu, commentaires2.date,commentaires2.signale,commentaires2.commentaire_id
             FROM commentaires2");
     }
 
@@ -39,7 +39,7 @@ class CommentaireTable extends Table{
      */
     public function showComment3(){
         return $this->query("
-            SELECT commentaires3.id, commentaires3.contenu, commentaires3.date,commentaires3.commentaire2_id
+            SELECT commentaires3.id, commentaires3.contenu, commentaires3.date,commentaires3.signale,commentaires3.commentaire2_id
             FROM commentaires3");
     }
 

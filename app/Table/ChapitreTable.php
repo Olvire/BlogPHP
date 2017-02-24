@@ -16,7 +16,7 @@ class ChapitreTable extends Table{
             SELECT chapitres.id, chapitres.titre, chapitres.contenu, chapitres.date, livres.titre as livre
             FROM chapitres
             LEFT JOIN livres ON livre_id = livres.id
-            ORDER BY chapitres.date DESC");
+            ORDER BY chapitres.id DESC");
     }
 
     /**
@@ -30,7 +30,7 @@ class ChapitreTable extends Table{
             FROM chapitres
             LEFT JOIN livres ON livre_id = livres.id
             WHERE chapitres.livre_id = ?
-            ORDER BY chapitres.date DESC", [$livre_id]);
+            ORDER BY chapitres.id DESC", [$livre_id]);
     }
 
     /**
