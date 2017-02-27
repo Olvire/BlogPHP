@@ -17,10 +17,15 @@ class ChapitresController extends AppController{
     }
 
     public function index(){
-        $chapitres = $this->Chapitre->all();
+        $page = 1;
+        if (isset($_GET['page'])){
+            $page = $_GET['page'];
+        }
+        $parPage = 3;
+        $nbrPages = ceil(count($this->Chapitre->nbrChapitres())/$parPage);
+        $chapitres = $this->Chapitre->last($page,$parPage);
         $livres = $this->Livre->all();
-        $Commentaire = $this->Commentaire->all();
-        $this->render('admin.chapitres.index', compact('chapitres','livres','commentaires'));
+        $this->render('admin.chapitres.index', compact('chapitres', 'livres','nbrPages'));
     }
 
     public function add(){
@@ -77,7 +82,7 @@ class ChapitresController extends AppController{
         }
         $token = $_SESSION['token'];
         $chapitre = $this->Chapitre->findWithLivre($id);
-        $chapitres = $this->Chapitre->lastByLivre($chapitre->livre_id);
+        $chapitres = $this->Chapitre->allLivre($chapitre->livre_id);
          $commentaires = $this->Commentaire->showComment($id);
          $commentaires2 = $this->Commentaire->showComment2();
          $commentaires3 = $this->Commentaire->showComment3();
@@ -103,4 +108,22 @@ class ChapitresController extends AppController{
         $this->render('admin.chapitres.show', compact('chapitres','chapitre','commentaires','commentaires2','commentaires3','pageBefore','pageAfter','token'));
     }
 
+
+    public function livres(){
+        $livre = $this->Livre->find($_GET['id']);
+        if($livre === false){
+            $this->notFound();
+        }
+        $page = 1;
+        if (isset($_GET['page'])){
+            $page = $_GET['page'];
+        }
+        $parPage = 3;
+        $nbrPages = ceil(count($this->Chapitre->nbrChapitresParLivre($_GET['id']))/$parPage);
+        $chapitres = $this->Chapitre->lastByLivre($page,$parPage,$_GET['id']);
+        $livres = $this->Livre->all();
+        $commentaires = $this->Commentaire->all();
+        $form = new BootstrapForm($chapitres);
+        $this->render('admin.livres.show', compact('chapitres', 'livres', 'livre','commentaires','form','nbrPages'));
+    }
 }

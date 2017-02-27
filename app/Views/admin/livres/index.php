@@ -1,4 +1,4 @@
-<h1>Administrer les livres</h1>
+<h1>Administrer les livres <a href="index.php?p=admin.chapitres.index" class="btn btn-info pull-right" style="margin-right: 1em">Retour</a></h1>
 
 <p>
     <a href="?p=admin.livres.add" class="btn btn-success">Ajouter</a>
@@ -7,7 +7,6 @@
 <table class="table">
     <thead>
     <tr>
-        <td>ID</td>
         <td>Titre</td>
         <td>Actions</td>
     </tr>
@@ -15,7 +14,6 @@
     <tbody>
         <?php foreach($items as $livre): ?>
         <tr>
-            <td><?= $livre->id; ?></td>
             <td><?= $livre->titre; ?></td>
             <td>
                 <a class="btn btn-primary" href="?p=admin.livres.edit&id=<?= $livre->id; ?>">Editer</a>

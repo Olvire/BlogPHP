@@ -15,3 +15,9 @@
     </div>
 
 </div>
+<div class="index-pagination">
+    <?php echo "<a href='index.php?p=chapitres.livres&id=$livre->id&page=1'>1</a>";
+    for ($i = 2; $i <= $nbrPages; $i++) {
+        echo " | <a href=\"index.php?p=chapitres.livres&id=$livre->id&page=$i\">$i</a>"  ;
+    }?>
+</div>

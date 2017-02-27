@@ -19,4 +19,10 @@ class ChapitreEntity extends Entity{
         return $html;
     }
 
+    public function getExtraitAdmin(){
+        $html = '<p>' . substr($this->contenu, 0, 300) . '...</p>';
+        $html .= '<p><a href="' . $this->getUrlAdmin() . '">Voir la suite</a></p>';
+        return $html;
+    }
+
 }

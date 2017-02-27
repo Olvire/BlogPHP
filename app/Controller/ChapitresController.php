@@ -17,9 +17,15 @@ class ChapitresController extends AppController{
     }
 
     public function index(){
-        $chapitres = $this->Chapitre->last();
+        $page = 1;
+        if (isset($_GET['page'])){
+            $page = $_GET['page'];
+        }
+        $parPage = 3;
+        $nbrPages = ceil(count($this->Chapitre->nbrChapitres())/$parPage);
+        $chapitres = $this->Chapitre->last($page,$parPage);
         $livres = $this->Livre->all();
-        $this->render('chapitres.index', compact('chapitres', 'livres'));
+        $this->render('chapitres.index', compact('chapitres', 'livres','nbrPages'));
     }
 
     public function livres(){
@@ -27,12 +33,17 @@ class ChapitresController extends AppController{
         if($livre === false){
             $this->notFound();
         }
-        
-        $chapitres = $this->Chapitre->lastByLivre($_GET['id']);
+        $page = 1;
+        if (isset($_GET['page'])){
+            $page = $_GET['page'];
+        }
+        $parPage = 3;
+        $nbrPages = ceil(count($this->Chapitre->nbrChapitresParLivre($_GET['id']))/$parPage);
+        $chapitres = $this->Chapitre->lastByLivre($page,$parPage,$_GET['id']);
         $livres = $this->Livre->all();
         $commentaires = $this->Commentaire->all();
         $form = new BootstrapForm($chapitres);
-        $this->render('chapitres.livre', compact('chapitres', 'livres', 'livre','commentaires','form'));
+        $this->render('chapitres.livre', compact('chapitres', 'livres', 'livre','commentaires','form','nbrPages'));
     }
 
     public function commentaire(){
@@ -51,7 +62,7 @@ class ChapitresController extends AppController{
             $id = $_GET['id'];
         }
         $chapitre = $this->Chapitre->findWithLivre($id);
-        $chapitres = $this->Chapitre->lastByLivre($chapitre->livre_id);
+        $chapitres = $this->Chapitre->allLivre($chapitre->livre_id);
          $commentaires = $this->Commentaire->showComment($id);
          $commentaires2 = $this->Commentaire->showComment2();
          $commentaires3 = $this->Commentaire->showComment3();

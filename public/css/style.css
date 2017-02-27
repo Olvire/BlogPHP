@@ -38,6 +38,14 @@ h3{
 	font-style: none;
 	text-decoration: none;
 }
+.index h1{
+	text-align: center;
+	font-size: 3em;
+	padding-bottom: 1em;
+}
+.livres-index{
+	padding: 1em;
+}
 .bar-bottom{
 	margin-top: 1em;
 	background: black;
@@ -49,6 +57,21 @@ h3{
 }
 .bar-bottom a:hover{ 
 	color: white;
+}
+.index-pagination{
+	margin-top: 1em;
+	background: black;
+	height: 66px;
+	color: white;
+	text-align: center;
+	line-height:66px;
+	font-size: 1.2em;
+}
+.index-pagination a{
+	color: #9d9d9d;
+}
+.index-pagination a:hover{
+	color:white;
 }
 .custom-select{
 	width: 100%;
