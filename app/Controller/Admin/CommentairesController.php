@@ -16,6 +16,30 @@ class CommentairesController extends AppController{
         $this->loadModel('Commentaire3');
     }
 
+    public function moderer(){
+        if (!empty($_POST)) {
+            $result = $this->Commentaire->update($_POST['id_commentaire'], [
+                'contenu' => "Ce commentaire a été modéré par l'administrateur.",
+                'signale' => false
+            ]);
+            if($result){
+                return $this->show($_POST['id']);
+            }
+        }
+    }
+
+     public function moderer2(){
+        if (!empty($_POST)) {
+            $result = $this->Commentaire2->update($_POST['id_commentaire2'], [
+                'contenu' => "Ce commentaire à été modéré par l'administrateur.",
+                'signale' => false
+            ]);
+            if($result){
+                return $this->show($_POST['id']);
+            }
+        }
+     }
+
     public function delete(){
         if (!empty($_POST)) {
             $result = $this->Commentaire->delete($_POST['id_commentaire']);
@@ -23,8 +47,9 @@ class CommentairesController extends AppController{
         }
     }
 
-     public function delete2(){
+    public function delete2(){
         if (!empty($_POST)) {
+
             $result = $this->Commentaire2->delete($_POST['id_commentaire2']);
             return $this->show($_POST['id']);
         }
@@ -41,6 +66,7 @@ class CommentairesController extends AppController{
         if (!isset($id)) {
             $id = $_GET['id'];
         }
+        $token = $_SESSION['token'];
         $chapitre = $this->Chapitre->findWithLivre($id);
         $chapitres = $this->Chapitre->lastByLivre($chapitre->livre_id);
          $commentaires = $this->Commentaire->showComment($id);
@@ -65,7 +91,7 @@ class CommentairesController extends AppController{
         } else {
             $pageAfter = "index.php?p=admin.chapitres.show&id=".$chapitre->id;
         }
-        $this->render('admin.chapitres.show', compact('chapitres','chapitre','commentaires','commentaires2','commentaires3','pageBefore','pageAfter'));
+        $this->render('admin.chapitres.show', compact('chapitres','chapitre','commentaires','commentaires2','commentaires3','pageBefore','pageAfter','token'));
     }
 
 }

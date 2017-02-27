@@ -59,7 +59,7 @@ class ChapitresController extends AppController{
     }
 
     public function delete(){
-        if (!empty($_POST)) {
+        if (!empty($_POST) && isset($_SESSION['token'])) {
             $result = $this->Chapitre->delete($_POST['id']);
             return $this->index();
         }
@@ -75,6 +75,7 @@ class ChapitresController extends AppController{
         if (!isset($id)) {
             $id = $_GET['id'];
         }
+        $token = $_SESSION['token'];
         $chapitre = $this->Chapitre->findWithLivre($id);
         $chapitres = $this->Chapitre->lastByLivre($chapitre->livre_id);
          $commentaires = $this->Commentaire->showComment($id);
@@ -99,7 +100,7 @@ class ChapitresController extends AppController{
         } else {
             $pageAfter = "index.php?p=admin.chapitres.show&id=".$chapitre->id;
         }
-        $this->render('admin.chapitres.show', compact('chapitres','chapitre','commentaires','commentaires2','commentaires3','pageBefore','pageAfter'));
+        $this->render('admin.chapitres.show', compact('chapitres','chapitre','commentaires','commentaires2','commentaires3','pageBefore','pageAfter','token'));
     }
 
 }

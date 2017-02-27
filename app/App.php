@@ -18,12 +18,6 @@ class App{
 
     public static function load(){
         session_start();
-        //On génére un jeton totalement unique (c'est capital :D)
-$token = uniqid(rand(), true);
-//Et on le stocke
-$_SESSION['token'] = $token;
-//On enregistre aussi le timestamp correspondant au moment de la création du token
-$_SESSION['token_time'] = time();
         require ROOT . '/app/Autoloader.php';
         App\Autoloader::register();
         require ROOT . '/core/Autoloader.php';

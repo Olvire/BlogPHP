@@ -2,7 +2,9 @@
 define('ROOT', dirname(__DIR__));
 require ROOT . '/app/App.php';
 App::load();
-
+if(isset($_GET['token']) && $_GET['token'] != $_SESSION['token']){
+    die('Action impossible car token invalide');
+}
 if(isset($_GET['p'])){
     $page = $_GET['p'];
 }else{

@@ -28,6 +28,7 @@ class DBAuth {
         if($user){
             if($user->password === sha1($password)){
                 $_SESSION['auth'] = $user->id;
+                //On enregistre notre token
                 return true;
             }
         }
@@ -35,7 +36,12 @@ class DBAuth {
     }
 
     public function logged(){
+        if (!isset($_SESSION['token'])){
+            $token = md5(time()*rand(88,1856));
+            $_SESSION['token'] = $token;
+        }
         return isset($_SESSION['auth']);
+
     }
 
 

@@ -9,8 +9,8 @@
 
             <p><?= $chapitre->extrait; ?></p>
             <div>
-                <a class="btn btn-primary" href="?p=admin.chapitres.edit&id=<?= $chapitre->id; ?>">Editer</a>
-                    <form action="?p=admin.chapitres.delete" method="post" style="display: inline;">
+                <a class="btn btn-primary" href="?p=admin.chapitres.edit&id=<?= $chapitre->id; ?>&token=<?= $_SESSION['token']?>">Editer</a>
+                    <form action="?p=admin.chapitres.delete&token=<?= $_SESSION['token']?>" method="post" style="display: inline;">
                         <input type="hidden" name="id" value="<?= $chapitre->id ?>">
                         <button type="submit" class="btn btn-danger">Supprimer</button>
                     </form>

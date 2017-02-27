@@ -39,13 +39,20 @@
 			} else {
 				foreach ($commentaires as $commentaire) {
 echo "<div id='first.$commentaire->id' class='com com1'>
-		 <p>$commentaire->contenu;</p> 
+		 <p>$commentaire->contenu</p> 
  			
  			<div class='pull-right'>
-                    <form action='?p=admin.commentaires.delete' method='post' style='display: inline;'>
+                    <form action='?p=admin.commentaires.moderer&token=$token' method='post' style='display: inline;'>
                         <input type='hidden' name='id' value='$chapitre->id'>
                         <input type='hidden' name='id_commentaire' value='$commentaire->id'>
-                        <button type='submit' class='btn btn-danger'>Supprimer</button>
+                        <button type='submit' class='btn btn-danger'>Modérer</button>
+                    </form>
+            </div>
+             <div class='pull-right'>
+                    <form action='?p=admin.commentaires.delete&token=$token' method='post' name='$commentaire->id' style='display: inline;'>
+                        <input type='hidden' name='id' value='$chapitre->id'>
+                        <input type='hidden' name='id_commentaire' value='$commentaire->id'>
+                        <button type='submit' class='btn btn-danger btn-supprimer '>Supprimer</button>
                     </form>
             </div>
        </div>            
@@ -53,13 +60,20 @@ echo "<div id='first.$commentaire->id' class='com com1'>
 					foreach ($commentaires2 as $commentaire2) {
 						if ($commentaire2->commentaire_id === $commentaire->id) {
 echo "<div id='second.$commentaire2->id' class='com com2'>
-		<p> $commentaire2->contenu; </p>
+		<p> $commentaire2->contenu </p>
 			
 			<div class='pull-right'>
-                    <form action='?p=admin.commentaires.delete2' method='post' style='display: inline;'>
+                    <form action='?p=admin.commentaires.moderer2&token=$token' method='post' style='display: inline;'>
                         <input type='hidden' name='id' value='$chapitre->id'>
                         <input type='hidden' name='id_commentaire2' value='$commentaire2->id'>
-                        <button type='submit' class='btn btn-danger'>Supprimer</button>
+                        <button type='submit' class='btn btn-danger'>Modérer</button>
+                    </form>
+            </div>
+            <div class='pull-right'>
+                    <form action='?p=admin.commentaires.delete2&token=$token' method='post' name='second$commentaire2->id' style='display: inline;'>
+                        <input type='hidden' name='id' value='$chapitre->id'>
+                        <input type='hidden' name='id_commentaire2' value='$commentaire2->id'>
+                        <button type='submit' class='btn btn-danger btn-supprimer '>Supprimer</button>
                     </form>
             </div>
 	    </div>             
@@ -67,10 +81,10 @@ echo "<div id='second.$commentaire2->id' class='com com2'>
 							foreach ($commentaires3 as $commentaire3) {
 								if ($commentaire3->commentaire2_id === $commentaire2->id) {
 echo "<div id='third.$commentaire3->id' class='com com3'>
-			<p> $commentaire3->contenu; </p>
+			<p> $commentaire3->contenu </p>
 			
 			<div class='pull-right'>
-                    <form action='?p=admin.commentaires.delete3' method='post' style='display: inline;'>
+                    <form action='?p=admin.commentaires.delete3&token=$token' method='post' name='form' style='display: inline;'>
                         <input type='hidden' name='id' value='$chapitre->id'>
                         <input type='hidden' name='id_commentaire3' value='$commentaire3->id'>
                         <button type='submit' class='btn btn-danger'>Supprimer</button>
@@ -97,13 +111,20 @@ echo "<div id='third.$commentaire3->id' class='com com3'>
 				foreach ($commentaires as $commentaire) {
 					if ($commentaire->signale) {
 						echo "<div id='first.$commentaire->id' class='com com1'>
-		 <p>$commentaire->contenu;</p> 
+		 <p>$commentaire->contenu</p> 
  			
  			<div class='pull-right'>
-                    <form action='?p=admin.commentaires.delete' method='post' style='display: inline;'>
+                    <form action='?p=admin.commentaires.moderer&token=$token' method='post' style='display: inline;'>
                         <input type='hidden' name='id' value='$chapitre->id'>
                         <input type='hidden' name='id_commentaire' value='$commentaire->id'>
-                        <button type='submit' class='btn btn-danger'>Supprimer</button>
+                        <button type='submit' class='btn btn-danger'>Modérer</button>
+                    </form>
+            </div>
+            <div class='pull-right'>
+                    <form action='?p=admin.commentaires.delete&token=$token' method='post' name='$commentaire->id' style='display: inline;'>
+                        <input type='hidden' name='id' value='$chapitre->id'>
+                        <input type='hidden' name='id_commentaire' value='$commentaire->id'>
+                        <button type='submit' class='btn btn-danger btn-supprimer '>Supprimer</button>
                     </form>
             </div>
        </div>            
@@ -113,13 +134,20 @@ echo "<div id='third.$commentaire3->id' class='com com3'>
 					foreach ($commentaires2 as $commentaire2) {
 						if (($commentaire2->commentaire_id === $commentaire->id) && ($commentaire2->signale)) {
 echo "<div id='second.$commentaire2->id' class='com com2'>
-		<p> $commentaire2->contenu; </p>
+		<p> $commentaire2->contenu </p>
 			
 			<div class='pull-right'>
-                    <form action='?p=admin.commentaires.delete2' method='post' style='display: inline;'>
+                    <form action='?p=admin.commentaires.moderer2&token=$token' method='post' style='display: inline;'>
                         <input type='hidden' name='id' value='$chapitre->id'>
                         <input type='hidden' name='id_commentaire2' value='$commentaire2->id'>
-                        <button type='submit' class='btn btn-danger'>Supprimer</button>
+                        <button type='submit' class='btn btn-danger'>Modérer</button>
+                    </form>
+            </div>
+            <div class='pull-right'>
+                    <form action='?p=admin.commentaires.delete2&token=$token' method='post' name='second$commentaire2->id' style='display: inline;'>
+                        <input type='hidden' name='id' value='$chapitre->id'>
+                        <input type='hidden' name='id_commentaire2' value='$commentaire2->id'>
+                        <button type='submit' class='btn btn-danger btn-supprimer '>Supprimer</button>
                     </form>
             </div>
 	    </div>             
@@ -127,13 +155,13 @@ echo "<div id='second.$commentaire2->id' class='com com2'>
 							foreach ($commentaires3 as $commentaire3) {
 								if (($commentaire3->commentaire2_id === $commentaire2->id) && ($commentaire3->signale)) {
 echo "<div id='third.$commentaire3->id' class='com com3'>
-			<p> $commentaire3->contenu; </p>
+			<p> $commentaire3->contenu </p>
 			
 			<div class='pull-right'>
-                    <form action='?p=admin.commentaires.delete3' method='post' style='display: inline;'>
+                    <form action='?p=admin.commentaires.delete3&token=$token' method='post' name='form'>
                         <input type='hidden' name='id' value='$chapitre->id'>
                         <input type='hidden' name='id_commentaire3' value='$commentaire3->id'>
-                        <button type='submit' class='btn btn-danger'>Supprimer</button>
+                        <button type='submit' class='btn btn-danger btn-supprimer '>Supprimer</button>
                     </form>
             </div>
 			</div> 
@@ -170,5 +198,6 @@ echo "<div id='third.$commentaire3->id' class='com com3'>
                     commentaires.slideDown();
                 };
             });
+
     });
 </script>
