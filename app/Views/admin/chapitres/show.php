@@ -105,12 +105,12 @@ echo "<div id='third.$commentaire3->id' class='com com3'>
 	 </div>
 	 <div id="commentaires-signales" class="commentaires row">
 
-	<?php if ($commentaires === false) {
-			echo "<p>Pas de commentaires</p>";
-			} else {
-				foreach ($commentaires as $commentaire) {
-					if ($commentaire->signale) {
-						echo "<div id='first.$commentaire->id' class='com com1'>
+	<?php   if ($commentaires === false && $commentaires2 === false && $commentaires3 === false) {
+        echo "<p>Pas de commentaire signalés</p>";
+    } else {
+                foreach ($commentaires as $commentaire) {
+                    if ($commentaire->signale) {
+                        echo "<div id='first.$commentaire->id' class='com com1'>
 		 <p>$commentaire->contenu</p> 
  			
  			<div class='pull-right'>
@@ -129,11 +129,11 @@ echo "<div id='third.$commentaire3->id' class='com com3'>
             </div>
        </div>            
 ";
-					}
-
-					foreach ($commentaires2 as $commentaire2) {
-						if (($commentaire2->commentaire_id === $commentaire->id) && ($commentaire2->signale)) {
-echo "<div id='second.$commentaire2->id' class='com com2'>
+                    }
+                }
+                        foreach ($commentaires2 as $commentaire2) {
+                            if ($commentaire2->signale) {
+                                echo "<div id='second.$commentaire2->id' class='com com2'>
 		<p> $commentaire2->contenu </p>
 			
 			<div class='pull-right'>
@@ -152,9 +152,11 @@ echo "<div id='second.$commentaire2->id' class='com com2'>
             </div>
 	    </div>             
 ";
+                            }
+                        }
 							foreach ($commentaires3 as $commentaire3) {
-								if (($commentaire3->commentaire2_id === $commentaire2->id) && ($commentaire3->signale)) {
-echo "<div id='third.$commentaire3->id' class='com com3'>
+                                if ($commentaire3->signale) {
+                                    echo "<div id='third.$commentaire3->id' class='com com3'>
 			<p> $commentaire3->contenu </p>
 			
 			<div class='pull-right'>
@@ -166,14 +168,12 @@ echo "<div id='third.$commentaire3->id' class='com com3'>
             </div>
 			</div> 
 		";
-								}
-								
-							}
-						}
-						
-					}
-				}
-			}
+                                }
+                            }
+    }
+
+
+
 		 ?>
 		
 	 </div>

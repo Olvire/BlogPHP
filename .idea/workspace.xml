@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eced36a4-6dec-4047-99d5-8824af3d666e" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/admin.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/admin/chapitres/show.php" afterPath="$PROJECT_DIR$/app/Views/admin/chapitres/show.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/chapitres/show.php" afterPath="$PROJECT_DIR$/app/Views/chapitres/show.php" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="show.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Views/chapitres/show.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+              <folding>
+                <marker date="1488204045000" expanded="true" signature="1823:3256" ph="..." />
+                <marker date="1488204045000" expanded="false" signature="1934:1950" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="1951:2226" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="2350:3242" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="2436:3229" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="2450:3219" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="2704:2940" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="2818:2930" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="2988:3203" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="3087:3193" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="3431:4912" ph="..." />
+                <marker date="1488204045000" expanded="false" signature="3541:3557" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="3558:3834" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="3953:4897" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="4040:4874" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="4055:4863" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="4323:4569" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="4441:4557" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="4621:4846" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="4724:4834" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="5092:6489" ph="..." />
+                <marker date="1488204045000" expanded="false" signature="5203:5219" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="5220:5451" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="5550:6477" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="5638:6454" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="5653:6443" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="5915:6156" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="6031:6145" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="6206:6426" ph="..." />
+                <marker date="1488204045000" expanded="true" signature="6307:6415" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Views/admin/chapitres/show.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="143" column="27" lean-forward="true" selection-start-line="143" selection-start-column="27" selection-end-line="143" selection-end-column="27" />
+              <folding>
+                <marker date="1488205650000" expanded="true" signature="1507:2510" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="1574:1996" ph="..." />
+                <marker date="1488205650000" expanded="false" signature="1675:1691" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="1692:1977" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="2034:2496" ph="..." />
+                <marker date="1488205650000" expanded="false" signature="2158:2174" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="2175:2477" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="2697:3709" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="2763:3188" ph="..." />
+                <marker date="1488205650000" expanded="false" signature="2865:2881" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="2882:3169" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="3225:3697" ph="..." />
+                <marker date="1488205650000" expanded="false" signature="3357:3373" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="3374:3678" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="3902:4417" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="3969:4407" ph="..." />
+                <marker date="1488205650000" expanded="false" signature="4082:4098" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="4099:4388" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="4911:5913" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="4978:5400" ph="..." />
+                <marker date="1488205650000" expanded="false" signature="5079:5095" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="5096:5381" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="5437:5899" ph="..." />
+                <marker date="1488205650000" expanded="false" signature="5561:5577" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="5578:5880" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="6185:7197" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="6251:6676" ph="..." />
+                <marker date="1488205650000" expanded="false" signature="6353:6369" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="6370:6657" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="6713:7185" ph="..." />
+                <marker date="1488205650000" expanded="false" signature="6845:6861" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="6862:7166" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="7476:7981" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="7543:7971" ph="..." />
+                <marker date="1488205650000" expanded="true" signature="7648:7952" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChapitresController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Controller/ChapitresController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1125">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChapitresController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Controller/Admin/ChapitresController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="74" column="26" lean-forward="true" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LivresController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Controller/Admin/LivresController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/Controller/Admin/ChapitresController.php" />
+        <option value="$PROJECT_DIR$/app/Views/chapitres/show.php" />
+        <option value="$PROJECT_DIR$/app/Views/admin/chapitres/show.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1121" />
+    <option name="y" value="274" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogPHP" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogPHP" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogPHP" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogPHP" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogPHP" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chapitres" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogPHP" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogPHP" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chapitres" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogPHP" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BlogPHP" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.eslint.eslintPackage" value="" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
+      <PhpTestRunnerSettings />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eced36a4-6dec-4047-99d5-8824af3d666e" name="Default" comment="" />
+      <created>1488203173843</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1488203173843</updated>
+      <workItem from="1488203176003" duration="2359000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2359000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1121" y="274" width="1400" height="1000" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/Controller/ChapitresController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1125">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/Admin/LivresController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/Admin/ChapitresController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="74" column="26" lean-forward="true" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/chapitres/show.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding>
+            <marker date="1488204045000" expanded="true" signature="1823:3256" ph="..." />
+            <marker date="1488204045000" expanded="false" signature="1934:1950" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="1951:2226" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="2350:3242" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="2436:3229" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="2450:3219" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="2704:2940" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="2818:2930" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="2988:3203" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="3087:3193" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="3431:4912" ph="..." />
+            <marker date="1488204045000" expanded="false" signature="3541:3557" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="3558:3834" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="3953:4897" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="4040:4874" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="4055:4863" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="4323:4569" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="4441:4557" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="4621:4846" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="4724:4834" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="5092:6489" ph="..." />
+            <marker date="1488204045000" expanded="false" signature="5203:5219" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="5220:5451" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="5550:6477" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="5638:6454" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="5653:6443" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="5915:6156" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="6031:6145" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="6206:6426" ph="..." />
+            <marker date="1488204045000" expanded="true" signature="6307:6415" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Views/admin/chapitres/show.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="143" column="27" lean-forward="true" selection-start-line="143" selection-start-column="27" selection-end-line="143" selection-end-column="27" />
+          <folding>
+            <marker date="1488205650000" expanded="true" signature="1507:2510" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="1574:1996" ph="..." />
+            <marker date="1488205650000" expanded="false" signature="1675:1691" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="1692:1977" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="2034:2496" ph="..." />
+            <marker date="1488205650000" expanded="false" signature="2158:2174" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="2175:2477" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="2697:3709" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="2763:3188" ph="..." />
+            <marker date="1488205650000" expanded="false" signature="2865:2881" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="2882:3169" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="3225:3697" ph="..." />
+            <marker date="1488205650000" expanded="false" signature="3357:3373" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="3374:3678" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="3902:4417" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="3969:4407" ph="..." />
+            <marker date="1488205650000" expanded="false" signature="4082:4098" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="4099:4388" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="4911:5913" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="4978:5400" ph="..." />
+            <marker date="1488205650000" expanded="false" signature="5079:5095" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="5096:5381" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="5437:5899" ph="..." />
+            <marker date="1488205650000" expanded="false" signature="5561:5577" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="5578:5880" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="6185:7197" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="6251:6676" ph="..." />
+            <marker date="1488205650000" expanded="false" signature="6353:6369" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="6370:6657" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="6713:7185" ph="..." />
+            <marker date="1488205650000" expanded="false" signature="6845:6861" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="6862:7166" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="7476:7981" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="7543:7971" ph="..." />
+            <marker date="1488205650000" expanded="true" signature="7648:7952" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

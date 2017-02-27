@@ -58,7 +58,7 @@
 			} else {
 				foreach ($commentaires as $commentaire) {
 echo "<div id='first.$commentaire->id' class='com com1'>
-		 <p>$commentaire->contenu;</p> 
+		 <p>$commentaire->contenu</p> 
  			
  			<form action='index.php?p=chapitres.signaler' method='post' style='display: inline;'>
                     <input type='hidden' name='id' value='$commentaire->id '>
@@ -98,7 +98,7 @@ echo "<div id='first.$commentaire->id' class='com com1'>
 					foreach ($commentaires2 as $commentaire2) {
 						if ($commentaire2->commentaire_id === $commentaire->id) {
 echo "<div id='second.$commentaire2->id' class='com com2'>
-		<p> $commentaire2->contenu; </p>
+		<p> $commentaire2->contenu</p>
 			
 			<form action='index.php?p=chapitres.signaler2' method='post' style='display: inline;'>
 	                    <input type='hidden' name='id' value='$commentaire2->id '>
@@ -138,7 +138,7 @@ echo "<div id='second.$commentaire2->id' class='com com2'>
 							foreach ($commentaires3 as $commentaire3) {
 								if ($commentaire3->commentaire2_id === $commentaire2->id) {
 echo "<div id='third.$commentaire3->id' class='com com3'>
-			<p> $commentaire3->contenu; </p>
+			<p> $commentaire3->contenu</p>
 			
 			<form action='index.php?p=chapitres.signaler3' method='post' style='display: inline;'>
 			    <input type='hidden' name='id' value='$commentaire3->id '>
