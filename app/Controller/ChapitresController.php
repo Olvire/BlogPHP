@@ -131,6 +131,7 @@ class ChapitresController extends AppController{
             $contenu = htmlspecialchars($_POST['contenu']);
             $result = $this->Commentaire2->create([
                 'contenu' => $contenu,
+                'chapitre_id' => $_POST['id_chapitre'],
                 'commentaire_id' => $_POST['commentaire_id']
             ]);
             $this->show($_POST['id_chapitre']);
@@ -142,6 +143,7 @@ class ChapitresController extends AppController{
             $contenu = htmlspecialchars($_POST['contenu']);
             $result = $this->Commentaire3->create([
                 'contenu' => $contenu,
+                'chapitre_id' => $_POST['id_chapitre'],
                 'commentaire2_id' => $_POST['commentaire2_id']
             ]);
             $this->show($_POST['id_chapitre']);

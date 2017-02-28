@@ -68,7 +68,7 @@ class CommentairesController extends AppController{
         }
         $token = $_SESSION['token'];
         $chapitre = $this->Chapitre->findWithLivre($id);
-        $chapitres = $this->Chapitre->lastByLivre($chapitre->livre_id);
+        $chapitres = $this->Chapitre->allLivre($chapitre->livre_id);
          $commentaires = $this->Commentaire->showComment($id);
          $commentaires2 = $this->Commentaire->showComment2();
          $commentaires3 = $this->Commentaire->showComment3();
