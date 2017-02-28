@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eced36a4-6dec-4047-99d5-8824af3d666e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/Admin/CommentairesController.php" afterPath="$PROJECT_DIR$/app/Controller/Admin/CommentairesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/ChapitresController.php" afterPath="$PROJECT_DIR$/app/Controller/ChapitresController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/admin/chapitres/show.php" afterPath="$PROJECT_DIR$/app/Views/admin/chapitres/show.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,11 +18,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Views/admin/chapitres/show.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1066">
-              <caret line="171" column="29" lean-forward="false" selection-start-line="171" selection-start-column="29" selection-end-line="171" selection-end-column="29" />
+            <state relative-caret-position="1126">
+              <caret line="175" column="21" lean-forward="true" selection-start-line="175" selection-start-column="21" selection-end-line="175" selection-end-column="21" />
               <folding>
                 <marker date="1488284612000" expanded="true" signature="1507:2510" ph="..." />
                 <marker date="1488284612000" expanded="true" signature="1574:1996" ph="..." />
@@ -62,6 +60,26 @@
                 <marker date="1488284612000" expanded="true" signature="7595:8023" ph="..." />
                 <marker date="1488284612000" expanded="true" signature="7700:8004" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dump.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dump.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,6 +151,8 @@
         <option value="$PROJECT_DIR$/app/Views/chapitres/show.php" />
         <option value="$PROJECT_DIR$/app/Controller/ChapitresController.php" />
         <option value="$PROJECT_DIR$/app/Views/admin/chapitres/show.php" />
+        <option value="$PROJECT_DIR$/dump.sql" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -526,12 +546,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1488203173843</updated>
-      <workItem from="1488203176003" duration="18720000" />
+      <workItem from="1488203176003" duration="18925000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18720000" />
+    <option name="totallyTimeSpent" value="18925000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1096" y="23" width="1400" height="1367" extended-state="0" />
@@ -804,8 +824,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Views/admin/chapitres/show.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1066">
-          <caret line="171" column="29" lean-forward="false" selection-start-line="171" selection-start-column="29" selection-end-line="171" selection-end-column="29" />
+        <state relative-caret-position="1126">
+          <caret line="175" column="21" lean-forward="true" selection-start-line="175" selection-start-column="21" selection-end-line="175" selection-end-column="21" />
           <folding>
             <marker date="1488284612000" expanded="true" signature="1507:2510" ph="..." />
             <marker date="1488284612000" expanded="true" signature="1574:1996" ph="..." />
@@ -843,6 +863,22 @@
             <marker date="1488284612000" expanded="true" signature="7595:8023" ph="..." />
             <marker date="1488284612000" expanded="true" signature="7700:8004" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dump.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
